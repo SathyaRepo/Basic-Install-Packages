@@ -14,4 +14,9 @@ sudo ecryptfs-migrate-home -u (User name B)
 sudo ecryptfs-unwrap-passpharse 
 #create a document and file browse to get pop up and press ok and password to get passphrase if not showing up
 
+#Restart the device to check disks application for swapfile and 1.1GB device
+
+#After all is done make sure to delete the files of backup user (Example A.gbuilGNUYF,B.VFTfvtyvD)
+sudo rm -Rf (Filename)
+
 #You cannot create encryption of self account that is user A can encrypt user B and vice-versa only
