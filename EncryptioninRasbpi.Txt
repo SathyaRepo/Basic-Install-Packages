@@ -1,0 +1,17 @@
+# This is for encrypting a Raspberry pi 4 system in SD Card
+
+# Running encryption for user A
+#Switch user to user B
+sudo ecryptfs-migrate-home -u (User name A)
+#switch to user A and Run following command to uncover passphrase
+sudo ecryptfs-unwrap-passpharse 
+#create a document and file browse to get pop up and press ok and password to get passphrase if not showing up
+
+# Running encryption for user B
+#Switch user to user A
+sudo ecryptfs-migrate-home -u (User name B)
+#switch to user B and Run following command to uncover passphrase
+sudo ecryptfs-unwrap-passpharse 
+#create a document and file browse to get pop up and press ok and password to get passphrase if not showing up
+
+#You cannot create encryption of self account that is user A can encrypt user B and vice-versa only
