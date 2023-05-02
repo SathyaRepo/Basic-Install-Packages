@@ -18,3 +18,5 @@ update-initramfs -u
 
 # Inform the user that the script has completed successfully
 echo "USB mass storage access has been disabled."
+
+Reboot
