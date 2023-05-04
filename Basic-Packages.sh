@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Install Chromium
+# Install Chromium and brave
 sudo apt-get update
 sudo apt-get install -y chromium-browser
+sudo snap install brave
 
 # Install ClamAV and ClamTk
 sudo apt-get install -y clamav clamtk
