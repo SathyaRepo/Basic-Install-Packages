@@ -11,3 +11,5 @@ echo "0 ${SCAN_TIME} * * * root /usr/bin/clamscan -r /" | sudo tee -a /etc/cront
 
 # Restart the cron service to apply the changes
 sudo service cron restart
+
+echo "ClamAV settings Updated"
