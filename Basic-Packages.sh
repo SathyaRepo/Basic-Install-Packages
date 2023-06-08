@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Accessing Command Stream"
+echo "Verifying system standby resources"
 
 # Install Chromium and brave
 sudo apt-get update
@@ -8,9 +10,13 @@ sudo snap install brave
 # Install ClamAV and ClamTk
 sudo apt-get install -y clamav clamtk
 
+echo "Anit-Malware installation loaded"
+
 # Install UFW
 sudo apt-get install -y ufw
 sudo ufw enable
+
+echo "Firewall up and running"
 
 # Install OpenSSH
 sudo apt-get install -y openssh-server
